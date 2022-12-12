@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="import" href="faviconico.ico">
+    <title>Exercicio 11</title>
+</head>
+<body>
+    <h1>Inclusão de Imagens Dinâmicas</h1>
+    <p>Vamos incluir uma imagem que vai se ajustar de acordo com o tamanho da tela do seu navegador.</p>
+    <picture>
+        <source media="(max-width:750px)" srcset="imagem/fotop.png" type="image/png">
+        <source media="(max-width:1050px )" srcset="imagem/fotom.png" type="image/png">
+        <img src="Imagem/fotog.png" alt="Imagem Tamanho Grande.">
+    </picture>
+
+    <h1>Inclusão de Audio!</h1>
+    <p>Vamos reproduzir um arquivo de audio em HTML5</p>
+<audio preload="metadata" autoplay controls loop>
+    <source src="midia/Glass - Anno Domini Beats.mp3" type="audio/mpeg"
+    >
+    <source src="midia/Glass - Anno Domini Beats.ogg" type="audio/ogg">
+    <source src="midia/Glass - Anno Domini Beats.wav" type="audio/wav">
+    <p>Infelizmente seu navegador suporta o audio<a href="midia/Glass - Anno Domini Beats.mp3" download="midia/Glass - Anno Domini Beats.mp3" type="audio/mpeg"></a>.</p>
+</audio>
+
+</body>
+</html>

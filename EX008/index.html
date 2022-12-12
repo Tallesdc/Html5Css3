@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formatação de Texto</title>
+    <style>
+        mark {background-color:darkgreen}
+    </style>
+</head>
+<body>
+   <h1>Principais Formatações</h1> 
+   <h2>Negrito / Destaque</h2>
+   <p>Nesta frase um termo <b>termo em negrito</b>usando a tag &lt;b&gt;(não tem semântica).</p>
+   <p>Nesta frase, tenho um <strong>termo em destaque</strong>usando a tag &lt;strong&gt;(semântica).</p>
+   <h2>Itálico / Ênfase</h2>
+   <p>Nesta frase, temos um <i>termo em itálico</i> usando a tag &lt;i&gt; (não semântica).</p>
+   <p>Nesta frase, temos um <em>termo em ênfase</em> usando a tag &lt;em&gt; (semântica).</p>
+   <h2>Texto Marcado</h2>
+   <p>Podemos criar também <mark>um texto marcado</mark> usando a tag &lt;mark&gt;. </p>
+   <p>E no outro parágrafo, temos <mark>outro texto marcado</mark> no final.</p>
+   <p>Para colocar a cor desejada na tag &lt;mark&gt; basta utilizar o paramentro style dentro da tag junto com o background-color.</p>
+   <p>Se você tiver vários mark's na pagina o ideal é utilizar a tag &lt;style&gt; dentro da parte <mark>'head' da configuração da sua página.</mark>
+   <h2>Texto grande e pequeno</h2>
+   <p> Estamos criando um <big>texto grande</big> e um <small>texto pequeno</small> nesse parágrafo. A tag &lt;big&gt; vai deletada porém, a tag &lt;small&gt; permanece.</p>
+   <h2>Texto deletado</h2>
+   <p>Podemos marcar <strike>um texto como excluido</strike> para indicar que ele deve ser lido, mas não considerado. Antigamente a tag utilizada era a &lt;strike&gt; e na versão atual utilizamos a tag &lt;dell&gt;.</p>
+   <h2>Texto inserido</h2>
+   <p>Podemos marcar <ins>um texto como inserido</ins> para dar uma ênfase e indicar que ele foi adicionado depois. Neste caso a tag utilizada é a &lt;ins&gt;.</p>
+   <p>Existem também o <u>sublinhado</u> com a tag não semântica &lt;u&gt;.</p>
+   <h2>Texto sobrescrito</h2>
+   <p>Para inserir coisas do tipo X<sup>2</sup>+3.</p>
+   <p>Para este caso deve-se utilizar a tag &lt;sup&gt;.
+    <h2>Texto Subscrito</h2>
+    <p>Para Inserir coisas como H<sub>2</sub>O.</p>
+    <p>Para este caso deve-se utilizar a tag &lt;sub&gt;.</p>
+    <h2>Trechos de código</h2>
+    <h3>Exemplo de código em Python</h3>
+    <code> num = input(input('Digite um número')) if num % 2 == 0:
+        print(f'0 número {num} é par')
+        else:
+        print(f'0 número {num} é impar')
+        print('Fim Do Programa')
+        </code>
+        <p>Ao usar a tag &lt;code&gt; para inserir trechos de código como o que foi feito no texto acima. Porém, o texto não vai aparecer com a formatação adequada.</p>
+        <p>Neste caso para inserir o trecho de código com a devida formatação deve-se inserir a tag &lt;pre&gt; junto a tag &lt;code&gt; sendo assim o trecho ficará com a formatação adequada conforme esta demonstrado logo a seguir:</p>
+        <pre><code> num = input(input('Digite um número')) if num % 2 == 0:
+            print(f'0 número {num} é par')
+            else:
+            print(f'0 número {num} é impar')
+            print('Fim Do Programa')
+            </code></pre>
+        <h2>"Citações"</h2>
+        <p>Para criar uma citação podemos usar a tag &lt;q&gt; (do inglês quote, que significa citar). O texto que estiver estre esta tag já vai aparecer automaticamente entre as apas.</p>
+        <p>Exemplo: <q>Tags unidas, jamais serão vencidas!</q></p>Também podemos criar citações mais longas (em bloco) que tenham um parágrafo só para si. Nesse caso, sera utilzada a tag &lt;blockquote&gt;. 
+        </p>
+        <p>Exemplo: <blockquote> O PHP é uma linguagem para criação de scripts para a Web do lado servidor embutidos em HTML, cujo código-font é aberto, e que é compativel com os mais importantes servidores Web (principalmebte Apache).</blockquote></p>
+            <p>Também podemos colocar um link para o texto original usando o parâmetro <strong>cite</strong> dentro da tag.
+                <p>Exemplo:</p>
+                <p><blockquote cite="https://www.martinsfontespaulista.com.br/php-a-biblia-53304.aspx/p"> O PHP é uma linguagem para criação de scripts para a Web do lado servidor embutidos em HTML, cujo código-font é aberto, e que é compativel com os mais importantes servidores Web (principalmebte Apache).</blockquote></p>
+    <h2>Abreviações</h2>
+    <p>Sempre que quiser escrever uma sigla, mas deixar claro para o usuário ( e aos mecanismos de busca) o significado dela, use a tag &lt;abbr&gt;.</p>
+    <p> Eu estou estudando <abbr tittle="Hypper Text Markup Language">HTML</abbr> para criar sites.</p>
+    <h2>Texto Invertido</h2>
+    <p><bdo dir="rtl"> Estou estudando HTML e estou adorando!</bdo></p>
+    
+    
+
+
+
+
+        
+</body>
+</html>

@@ -1,0 +1,32 @@
+@charset "UTF-8";
+
+body {
+    background-color: #ffffff;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.aprendendo {
+    color: white;
+    text-align: left;
+    background-color: #fceb04;
+}
+
+h1#principal {
+    text-align: center;
+    background-color: blue;
+    color: white;
+}
+
+.basico {
+    color: #02f80e;
+}
+
+.intermediario {
+    color: #d6c808;
+
+}
+
+.avancado {
+    color:#ff0101
+}
+
