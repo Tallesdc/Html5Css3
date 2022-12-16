@@ -4,25 +4,28 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Fundo fixo de tela</title>
     <style>
         body{
             height: 100vh;
-            background-color: black;
-            background-image: url('imagens/wallpaper002.jpg');
-            background-repeat: no-repeat;
-            background-position: center top;
             background-size: cover;
+            background: black url('imagens/wallpaper002.jpg') center center fixed;
         }
+          /* Shorthand - background
+        color > image > position >  [size]attachment 
+        */
+        
+           /*A declaração size esta no manual da W3C que pode ser inserida na shorthand porém os navegadores ainda não aceitam. Com isso a declaração size não será inclusa até que ocorra a atualização de fato.*/
 
         main{
             background-color: white;
-            width: 400px;
+            max-width: 400px;
             padding: 10px;
             margin: auto;
             border: 1px solid darkblue;
             border-radius: 15px;
         }
+        
     </style>
 </head>
 <body>
@@ -35,6 +38,10 @@
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, adipisci perferendis deleniti possimus, fugit molestiae, voluptas laudantium illo est at rem maxime accusantium blanditiis dolores. Itaque dolores repellat animi voluptatibus.</p>
         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim alias laudantium molestiae sapiente. Velit vitae exercitationem dolores sapiente, nesciunt optio voluptate quidem repudiandae assumenda necessitatibus vel accusantium quae fugiat excepturi.</p>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam vitae quisquam voluptatum similique aliquam praesentium voluptas, aspernatur ipsum? Aliquid, suscipit beatae. Dicta facilis quod earum quia quam saepe hic totam!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa aliquam totam laudantium exercitationem aliquid, nobis est dolore. Deserunt sit, sunt consequuntur veniam hic, aut autem veritatis nemo cum iure officia.</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam impedit, sequi repudiandae qui libero quam magnam dolorum esse enim sit totam earum accusantium consectetur minima aperiam dolore odit? Esse, sequi.</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam, ut laborum praesentium aliquid temporibus sequi quia eveniet, voluptatum voluptas consequuntur assumenda blanditiis officiis quis distinctio maxime cumque autem deserunt odio!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, adipisci. Quod pariatur reiciendis amet nam facere ratione aliquam aspernatur aperiam, iusto deleniti iste accusantium nisi ut minus praesentium ullam similique?</p>
     </main>
 </body>
 </html>
