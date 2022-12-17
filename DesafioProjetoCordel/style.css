@@ -14,15 +14,22 @@
 
 :root {
     --fontetitulo: 'titulo';
-    --fontecorpo: 'corpo';
+    --fontecorpo: 'mono';
 }
 
 *{
     margin:0px;
     padding:0px;
 }
+
+body{
+    height: 100vh;
+   
+
+}
+
 header{
-    margin: -100px;
+    margin: auto;
     padding: 50px;
     background-color: black;
 }
@@ -50,8 +57,32 @@ header > p > a:hover{
     text-decoration: underline;
 }
 
-section.p{
+
+
+
+.preto{
     font-family: var(--fontecorpo);
     color: black;
+    font-size: 23px;
+    line-height: 2em;
+   
+    }
 
+.imagem{
+   
+    font-family: var(--fontecorpo);   
+    color: white;
+    font-size: 23px;
+    line-height: 2em;
+    background-size: auto;
+    background: url('pacote-d012/imagens/background001.jpg')  right center fixed;
+}
+
+.imagem{
+font-family: var(--fontecorpo);   
+color: white;
+font-size: 23px;
+line-height: 2em;
+background-size: auto;
+background: url('pacote-d012/imagens/background002.jpg')  right center fixed;
 }
