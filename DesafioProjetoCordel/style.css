@@ -25,7 +25,6 @@
 body{
     height: 100vh;
    
-
 }
 
 header{
@@ -60,11 +59,13 @@ header > p > a:hover{
 
 
 
-.preto{
+section > p{
+    margin-top: 30px;
     font-family: var(--fontecorpo);
     color: black;
     font-size: 23px;
     line-height: 2em;
+    margin-bottom: 30px;
    
     }
 
@@ -74,15 +75,15 @@ header > p > a:hover{
     color: white;
     font-size: 23px;
     line-height: 2em;
-    background-size: auto;
-    background: url('pacote-d012/imagens/background001.jpg')  right center fixed;
+    margin-bottom: 30px;
 }
 
-.imagem{
-font-family: var(--fontecorpo);   
-color: white;
-font-size: 23px;
-line-height: 2em;
-background-size: auto;
-background: url('pacote-d012/imagens/background002.jpg')  right center fixed;
+#img01{
+    background-size: auto;
+    background: url(pacote-d012/imagens/background001.jpg) right center fixed;
+}
+
+#img02{
+    background-size: auto;
+    background: url(pacote-d012/imagens/background002.jpg) right center fixed;
 }
