@@ -26,13 +26,16 @@ header{
     margin: auto;
     padding: 50px;
     background-color: black;
+    
 }
 
 header > h1 {
     font-family: var(--fonte2);
-    font-size: 15vh;
+    font-variant: small-caps;
+    font-size: 10vw;
     color: white;
     text-align: center;
+
 }
 
 header > p {
@@ -58,7 +61,7 @@ section{
     padding-bottom: 10vh;
     padding-left: 30px;
     font-family: var(--fonte3);
-    font-size: 6vh;
+    font-size: 5vw; /* A utilização da 'unidade de medida' vw(view width - LARGURA DA TELA) é para adaptar o tamanho da fonte a largura da tela em que o projeto for exibido. Não é obrigatório porém vai de acordo com a necessidade do projeto. O MESMO SERVE PARA  vh (view heigth - altura da tela). Ambas podem ser utilizadas também para configuração das caixas.*/
     font-style: italic;
     line-height: 2em;
 
@@ -99,13 +102,13 @@ footer{
     text-align: center;
 }
 
-footer > a {
+footer > p > a {
     font-family: var(--fonte1);
     color: white;
     font-weight: bold;
     text-decoration: none;
 }
 
-footer > a:hover{
+footer > p > a:hover{
     text-decoration: underline;
 }
