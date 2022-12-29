@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        table{
+            height: 400px;
+            width: 400px; 
+            border-collapse: collapse;
+            
+        }
+
+        /* border-collapse: É uitlizado para ajustar as bordas da tabela. Se utilzar a função separate( as celuas vão ficar desenhadas separadamente) já a função collapse (as celulas ficarão juntas 'grudadas' umas as outras).*/
+
+        td {
+            border: 1px solid black;
+            text-align: center; /*Alinhamento Horizontal*/
+           
+            vertical-align: middle;
+            /*Alinhamento Vertical*/
+            font-weight: bolder;
+        }
+
+        tr.linha{
+            background-color: yellow;
+        }
+
+        td.celula{
+            background-color: silver; 
+        }
+    </style>
+</head>
+<body>
+    <h1>Primeira Tabela</h1>
+    <!--
+        Hierarquia de Tabela (Simples)
+        TABLE = tabela
+        *Table Row <tr>= linha de tabela;
+        *Table Header = cabeçalho de tabela;
+        *Table Data <td>= dado de tabela; 
+
+        W3C - Coloca como opcinal o fechmaneto destas tag's referente a tabela.
+        Se a os dados não  seguirem a hierarquia da tabela os mesmos vão aprecer antes ou depois da tabela.
+
+        **AS TABELAS DEVEM SER UTILIZADAS PARA ORGANIZAÇÃO DE DADOS E NÃO PARA ESTRUTURAR SITES.**
+    -->
+    <table>
+        <tr>
+         <td>A1</td>
+         <td>A2</td>
+         <td class="celula">A3</td>
+         <td>A4</td>   
+        </tr>
+        
+        <tr>
+        <td>B1</td>
+        <td>B2</td>
+        <td>B3</td>
+        <td>B4</td>
+        </tr>
+        
+        <tr class="linha">
+        <td>C1</td>
+        <td>C2</td>
+        <td>C3</td>
+        <td>C4</td>
+        </tr>
+
+    </table>
+</body>
+</html>
